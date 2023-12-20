@@ -93,3 +93,73 @@ nav {
 .main-banner p {
   font-size: 30px;
 }
+
+/* Serviços */
+.services-container {
+  padding: 5rem 0;
+}
+
+.services-container ul {
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.services-container li {
+  flex: 1 1 200px;
+  list-style: none;
+  text-align: center;
+  padding: 5px;
+}
+
+.fas {
+  font-size: 60px;
+  margin-bottom: 15px;
+}
+
+.fa-shield-alt {
+  color: #2cc76a;
+}
+.fa-rocket {
+  color: #ec370a;
+}
+.fa-comments {
+  color: #fca80d;
+}
+
+.services-container h3 {
+  margin-bottom: 25px;
+}
+.services-container p {
+  line-height: 24px;
+}
+
+/* Preços e Planos */
+.pricing-container {
+  padding-bottom: 5rem;
+  text-align: center;
+}
+
+.pricing-container h2 {
+  font-size: 36px;
+  margin-top: 0;
+}
+
+.services-container p {
+  font-size: 20px;
+}
+
+.plans-container {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 50px auto 0;
+}
+
+.plan {
+  width: 275px;
+  flex: 1;
+}
+.plan li {
+  list-style: none;
+}
