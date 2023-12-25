@@ -2,7 +2,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Helvetica;
   box-sizing: border-box;
 }
 
@@ -84,14 +84,14 @@ nav {
   color: #fff;
   text-align: center;
   font-weight: bold;
-  text-shadow: #000 4px 3px 3px;
+  text-shadow: #000 3px 2px 3px;
 }
 
 .main-banner h1 {
-  font-size: 50px;
+  font-size: 54px;
 }
 .main-banner p {
-  font-size: 30px;
+  font-size: 32px;
 }
 
 /* Serviços */
@@ -109,7 +109,7 @@ nav {
   flex: 1 1 200px;
   list-style: none;
   text-align: center;
-  padding: 5px;
+  padding: 20px;
 }
 
 .fas {
@@ -131,7 +131,7 @@ nav {
   margin-bottom: 25px;
 }
 .services-container p {
-  line-height: 20px;
+  line-height: 24px;
 }
 
 /* Preços e Planos */
@@ -142,7 +142,6 @@ nav {
 
 .pricing-container h2 {
   font-size: 36px;
-  margin-top: 0;
 }
 
 .services-container p {
@@ -157,18 +156,19 @@ nav {
 }
 
 .plan {
-  width: 275px;
   flex: 1;
+  max-width: 275px;
+  margin: 0 20px;
 }
 
 .plan ul {
-  margin: 0 20px;
+  padding: 0;
 }
 
 .plan li {
   list-style: none;
   height: 50px;
-  line-height: 30px;
+  line-height: 50px;
   background-color: #e4e7ec;
   color: #545b63;
 }
@@ -198,10 +198,12 @@ nav {
 .plan .plan-btn {
   background-color: #2cc76a;
   color: #fff;
-  font-size: 25px;
+  font-size: 24px;
   height: 75px;
   line-height: 75px;
+  cursor: pointer;
 }
+
 .plan .recommended {
   background-color: #ee4d4d;
 }
@@ -232,11 +234,12 @@ nav {
   margin: 0 auto;
 }
 
-.searchdomain-container input[type="text"] {
+.searchdomain-container input[type="text"] { 
   width: 60%;
   padding: 20px;
   font-size: 20px;
   margin-bottom: 25px;
+  /* parei aqui */
 }
 
 .searchdomain-container input[type="submit"] {
@@ -329,7 +332,23 @@ footer {
 /* Tablet 900px */
 @media (max-width: 900px) {
   .main-banner p {
-    font-size: 30px;
     padding: 0 6rem;
+  }
+
+  .searchdomain-container {
+    padding: 2rem 4rem;
+  }
+}
+
+/* Celular 576px */
+@media (max-width: 576) {
+  .plans-container {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .plan {
+    width: 100%;
+    max-width: 100%;
   }
 }
